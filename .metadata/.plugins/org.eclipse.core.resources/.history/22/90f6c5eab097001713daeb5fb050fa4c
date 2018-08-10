@@ -1,0 +1,111 @@
+package ga
+
+import scala.collection.mutable.ArrayBuffer
+import scala.io.Source
+import scala.math.random
+import org.apache.spark._
+import java.io.{File, PrintWriter}
+
+object Mymain {
+  def main(args: Array[String]): Unit = {
+    val conf = new SparkConf().setMaster("local[1]").setAppName("bhmc")//创建环境变量、设置本地化处理、设置名称
+    //conf.set("spark.testing.memory", "2147480000")//设置系统可用最大内存
+  
+    val sc = new SparkContext(conf) //创建环境变化实例sc
+    var model = 3
+    //val start = System.nanoTime(): Double
+    val atomN = 49//原子数
+    val popSize = 20//种群个体数
+    val rate = 0.5
+    //var Corate = (atomN*rate).toInt
+    val Corate = 25
+    //Co原子数
+    val numPartitions = popSize//保证每个分区的实现
+    var fileName = "./1"
+    if(model == 1)
+    {
+      fileName = "./result//atom"+atomN+"//"+"Co"+".txt"
+    }
+    else if(model == 2)
+    {
+      fileName = "./result//atom"+atomN+"//"+"Pt"+".txt"
+    }
+    else
+    {
+      fileName = "./result//atom"+atomN+"//"+atomN+"Co"+Corate+".txt"
+    }
+    
+    //val writer123 = new PrintWriter(new File("./result//result.txt" ))//scala文件处理（“绝对路径”）
+    val writer123 = new PrintWriter(new File(fileName))
+    //var subpopulation  = Initialization.initialPopulation(popSize, atomN,rate, numPartitions)
+   // var testpop = Initialization.initialChromosome(atomN,rate)
+    //println("out:" + testpop.take(5))
+    //var newChrm = new Chromosome(testpop)
+    //testpop.fitness = Tool.localEnergy(testpop.genes,atomN)
+    //println("out:" + testpop.fitness)
+    var populationRDD = sc.parallelize(Initialization.initialPopulation(popSize, atomN,Corate, numPartitions))//初始化种群,输入数组数据集
+    //新版下行原来注释
+    populationRDD = populationRDD.partitionBy(new ModPartitioner(numPartitions))
+    
+    
+    //test output rusult
+//    populationRDD.mapPartitionsWithIndex{
+//          (partIdx,iter) => {
+//            while(iter.hasNext) {
+//              val elem = iter.next()
+//              for(i <- 0 until 4*atomN)
+//              println("index:"+partIdx+"//elem(i):"+elem._2.genes(i))
+//            }
+//            iter
+//          }zx
+//        }.collect()
+    
+    //out the best rusult
+    val best = populationRDD.min()(Ordering[Double].on(x => x._2.fitness))//利用RDD的min的方法去除最小的值
+    println("bestout:" + best._2.fitness)//输出最优值
+    
+    //algorithm start
+        val start = System.nanoTime(): Double//计算初始时间
+        //println(start)
+        val maxgeneration = 2500//设置最大迭代次数
+        val SphereRate = 0.5//球切率
+        val mutationRate = 0.2//变异概率
+        val elitismRate = 0.3//精英概率
+        val migrationPeriod = 20
+        val migrationSize = 20
+        val tournamentSize = 10
+        
+        // initalization
+        val ga = new BHMC(maxgeneration,popSize, atomN,Corate,SphereRate, mutationRate, elitismRate,tournamentSize, numPartitions, migrationPeriod, migrationSize)
+    
+        //evolve start
+        val BHMCRDD = ga.evolve(populationRDD,sc)  
+        
+        //check time
+        val end = System.nanoTime(): Double//计算结束时间
+        val bestIndividual = BHMCRDD.min()(Ordering[Double].on(x => x._2.fitness))//得到最优值
+        println("the best energy is:" + bestIndividual._2.fitness)
+        //将最优结果按格式进行保存
+        writer123.println(atomN);
+        writer123.println("CoPt，"+bestIndividual._2.fitness)
+         for(i <- 0 until atomN){
+
+              //合金Co-Pt
+              if(bestIndividual._2.genes(i) == 0.0 )
+              {
+                 writer123.println("Co" + "\t" + "%1.6f".format(bestIndividual._2.genes(i+atomN)) + "\t" + "%1.6f".format(bestIndividual._2.genes(i + 2*atomN)) + "\t" + "%1.6f".format(bestIndividual._2.genes(i + 3*atomN)))
+              }
+              else
+              {
+                writer123.println("Pt" + "\t" + "%1.6f".format(bestIndividual._2.genes(i+atomN)) + "\t" + "%1.6f".format(bestIndividual._2.genes(i + 2*atomN)) + "\t" + "%1.6f".format(bestIndividual._2.genes(i + 3*atomN)))
+             }
+           
+
+         }
+        //folderResults.append(bestIndividual._2.fitness)  
+      println("Runtime:") 
+      println((end - start)/1000000000.0)
+    writer123.close()//文件关闭
+    sc.stop()//关闭Spark
+  }
+}

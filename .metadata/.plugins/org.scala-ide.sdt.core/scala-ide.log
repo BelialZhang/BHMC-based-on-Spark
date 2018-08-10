@@ -1,0 +1,66 @@
+2017-09-08 14:07:28,297  WARN [ModalContext] - ScalaProject - Project Spark has platform default sourceLevel.
+2017-09-08 14:07:28,298  WARN [ModalContext] - ScalaProject - Project Spark runs on platform default installation.
+2017-09-08 14:07:28,302  WARN [ModalContext] - ScalaProject - Project MyProject has platform default sourceLevel.
+2017-09-08 14:07:28,302  WARN [ModalContext] - ScalaProject - Project MyProject runs on platform default installation.
+2017-09-08 14:07:28,303  WARN [ModalContext] - ScalaProject - Project SparkProject has platform default sourceLevel.
+2017-09-08 14:07:28,303  WARN [ModalContext] - ScalaProject - Project SparkProject runs on platform default installation.
+2017-09-08 14:07:30,096  WARN [ModalContext] - ScalaProject - Project MyProject has platform default sourceLevel.
+2017-09-08 14:07:30,097  WARN [ModalContext] - ScalaProject - Project MyProject runs on platform default installation.
+2017-09-08 14:07:30,529  WARN [ModalContext] - ScalaProject - Project Spark has platform default sourceLevel.
+2017-09-08 14:07:30,529  WARN [ModalContext] - ScalaProject - Project Spark runs on platform default installation.
+2017-09-08 14:07:31,441  WARN [ModalContext] - ScalaProject - Project SparkProject has platform default sourceLevel.
+2017-09-08 14:07:31,441  WARN [ModalContext] - ScalaProject - Project SparkProject runs on platform default installation.
+2017-09-08 14:07:34,774  WARN [Worker-7] - ScalaProject - Project MyProject has platform default sourceLevel.
+2017-09-08 14:07:34,775  WARN [Worker-7] - ScalaProject - Project MyProject runs on platform default installation.
+2017-09-08 14:07:58,389 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-08 14:07:58,389 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-08 14:07:58,389 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-08 14:08:21,329  WARN [Worker-7] - ScalaProject - Project SparkProject has platform default sourceLevel.
+2017-09-08 14:08:21,329  WARN [Worker-7] - ScalaProject - Project SparkProject runs on platform default installation.
+2017-09-08 14:09:33,153  WARN [Java 建立索引] - ScalaProject - Project MyProject has platform default sourceLevel.
+2017-09-08 14:09:33,153  WARN [Java 建立索引] - ScalaProject - Project MyProject runs on platform default installation.
+2017-09-08 14:09:33,902  WARN [Java 建立索引] - ScalaProject - Project SparkProject has platform default sourceLevel.
+2017-09-08 14:09:33,902  WARN [Java 建立索引] - ScalaProject - Project SparkProject runs on platform default installation.
+2017-09-10 17:34:23,868  WARN [main] - ScalaProject - Project MyProject has platform default sourceLevel.
+2017-09-10 17:34:23,888  WARN [main] - ScalaProject - Project MyProject runs on platform default installation.
+2017-09-10 17:34:26,196  WARN [Worker-3] - ScalaProject - Project SparkProject has platform default sourceLevel.
+2017-09-10 17:34:26,201  WARN [Worker-3] - ScalaProject - Project SparkProject runs on platform default installation.
+2017-09-10 17:34:27,859 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_day in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,860 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Monday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,860 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Tuesday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,860 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Wednesday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,861 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Thursday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,861 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Friday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,862 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Saturday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,862 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_Sunday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,862 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_1AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,863 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_2AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,863 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_3AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,863 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_4AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,863 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_5AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,863 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_6AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,864 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_7AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,864 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_8AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,864 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_9AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,864 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_10AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,865 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_11AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,865 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_12PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,865 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_1PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,865 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_2PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,866 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_3PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,866 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_4PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,866 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_5PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,866 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_6PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,867 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_7PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,867 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_8PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,867 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_9PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,867 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_10PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,868 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_11PM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-10 17:34:27,868 ERROR [Worker-0] - System.err - Warning: NLS unused message: SchedulerStartup_12AM in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2017-09-13 19:43:38,831 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-13 19:43:38,915 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-13 19:43:38,916 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-13 19:43:38,916 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-15 08:56:14,513 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-15 08:56:14,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2017-09-15 08:56:14,523 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
